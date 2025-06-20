@@ -1,0 +1,15 @@
+# Core dependencies
+numpy
+torch
+torchvision
+Pillow
+
+# Visualization and data processing
+matplotlib
+opencv-python
+einops
+tqdm
+tabulate
+
+# Configuration
+yacs
