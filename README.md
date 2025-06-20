@@ -4,7 +4,7 @@ This repository contains the official implementation of the paper:
 **PMatch: Paired Masked Image Modeling for Dense Geometric Matching**, CVPR'23, [[arXiv]](https://arxiv.org/abs/2303.17342)
 
 Authors: [Shengjie Zhu](https://shngjz.github.io/) and [Xiaoming Liu](https://cvlab.cse.msu.edu/)
-![](assets/pmatch.png)
+<img src="assets/pmatch.png" style="width: 50%;">
 
 ## Installation
 
