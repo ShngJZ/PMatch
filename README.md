@@ -7,7 +7,7 @@ Authors: [Shengjie Zhu](https://shngjz.github.io/) and [Xiaoming Liu](https://cv
 
 <img src="assets/pmatch.png" style="width: 50%;">
 
-## Installation
+### Installation
 
 ```bash
 # Clone the repository
@@ -20,7 +20,7 @@ conda activate pmatch
 pip install -r requirements.txt
 ```
 
-## Download Datasets
+### Download Datasets
 
 Download the benchmark MegaDepth and ScanNet datasets from Huggingface. Please ensure you agree to the licenses for each dataset.
 
@@ -29,16 +29,19 @@ git clone https://huggingface.co/datasets/shngjz/ce29d0e9486d476eb73163644b05022
 mv ce29d0e9486d476eb73163644b050222 TwoViewBenchmark
 ```
 
-## Checkpoints
+### Checkpoints
 
-Download the pre-trained models from Huggingface:
+Download the pre-trained models from Huggingface using our provided script:
 
-| Model | Environment | Description | Link |
-|-------|------------|-------------|------|
-| PMatch-Indoor | Indoor | Trained on ScanNet | [pmatch_scannet.pth](https://huggingface.co/datasets/shngjz/ce29d0e9486d476eb73163644b050222/blob/main/checkpoints/pmatch_scannet.pth) |
-| PMatch-Outdoor | Outdoor | Trained on MegaDepth | [pmatch_mega.pth](https://huggingface.co/datasets/shngjz/ce29d0e9486d476eb73163644b050222/blob/main/checkpoints/pmatch_mega.pth) |
+```bash
+# Make the script executable if needed
+chmod +x download_models.sh
 
-Place the downloaded checkpoints in the `checkpoints` directory.
+# Run the download script
+./download_models.sh
+```
+
+This will automatically download both models and place them in the `checkpoints` directory.
 
 ### Demo
 
@@ -64,7 +67,7 @@ python PMatch/Benchmarks/benchmark_pmatch_scannet.py \
     --checkpoints checkpoints/pmatch_scannet.pth
 ```
 
-## Citation
+### Citation
 
 If you find this code useful for your research, please cite our paper:
 
